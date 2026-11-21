@@ -1,0 +1,13 @@
+{
+  "name": "agy-atelier",
+  "displayName": "星语猫娘工坊 · Star Neko Atelier",
+  "version": "0.2.0",
+  "description": "参考 maid-atelier（深海女仆工坊）设计、专为你的紫发异瞳猫娘壁纸《星语 · 雪原》定制的 Antigravity 皮肤插件：星夜紫猫爪暗纹侧栏、四角星金饰内框、陶瓷白燕尾缎带按钮、U 形蕾丝星结蝴蝶结花边，以及全文磨砂消息气泡与过程行胶囊。",
+  "logo": "assets/logo.png",
+  "license": "MIT",
+  "suggestedPrompts": [
+    "打开星语猫娘工坊面板并应用猫女壁纸皮肤",
+    "调节猫女壁纸浓度与磨砂玻璃模糊度，开启或关闭侧栏 U 形蕾丝花边",
+    "切换亮色/暗色猫娘工坊主题或还原 Antigravity 原生界面"
+  ]
+}
