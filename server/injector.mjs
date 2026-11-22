@@ -1,4 +1,4 @@
-// Isolated-world DevTools injector for AGY Atelier (Star Neko Atelier).
+// Isolated-world DevTools injector for AGY Atelier (Zili Neko Atelier).
 import { readFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { dirname, extname, join } from 'node:path';
@@ -62,7 +62,7 @@ async function fileToDataUri(p) {
 }
 
 
-// ───────────────────────── Star Neko Atelier · 星语猫娘工坊 ─────────────────────────
+// ───────────────────────── Zili Neko Atelier · 紫璃猫娘 ─────────────────────────
 // Complete architecture & visual contract aligned with atelier/src & atelier/tests:
 // - [data-skin-chrome="character-stage"] inside the conversation column with
 //   [data-skin-chrome="character-span"], [data-maid-character="left"], [data-maid-character="right"]
@@ -630,7 +630,7 @@ function buildCss(cfg, arts) {
       filter: none; transition: opacity 180ms ease;
     }
 
-    /* 舞台中央“探索未至之境 · 星语工坊”圆形徽章横幅 (apply.spec.ts:1614-1673) */
+    /* 舞台中央“探索未至之境 · 紫璃猫娘工坊”圆形徽章横幅 (apply.spec.ts:1614-1673) */
     #aa-hero-crest {
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       margin: 10px auto 10px auto; padding: 6px 0; width: 100%; max-width: 720px;
@@ -921,7 +921,7 @@ function buildCss(cfg, arts) {
       padding-top: 6px !important;
       min-height: 40px !important;
     }
-    /* 左下第 1 个圆钮：[ + ]（星语紫罗兰磨砂金边圆钮） */
+    /* 左下第 1 个圆钮：[ + ]（紫璃罗兰紫磨砂金边圆钮） */
     html.aa-on.aa-on .surface-composer button[aria-label="Add context"] {
       width: 38px !important; height: 38px !important;
       border-radius: 999px !important;
@@ -930,7 +930,7 @@ function buildCss(cfg, arts) {
       color: #f4ecff !important;
       box-shadow: inset 0 1px 0 rgba(255,255,255,.24), 0 2px 8px rgba(10, 5, 28, .38) !important;
     }
-    /* 左下第 2 个圆钮：[ 🛡 ] 权限盾牌（星语紫罗兰磨砂金边圆钮） */
+    /* 左下第 2 个圆钮：[ 🛡 ] 权限盾牌（紫璃罗兰紫磨砂金边圆钮） */
     html.aa-on.aa-on .surface-composer button[data-testid="permissions-selector-trigger"] {
       position: absolute !important;
       left: 48px !important;
@@ -953,7 +953,7 @@ function buildCss(cfg, arts) {
       width: 15px !important; height: 15px !important;
     }
 
-    /* 将模型选择器推到右下角按钮左侧，并在前面附带星语紫罗兰配色 [ ✓ 识图 ] 标签 */
+    /* 将模型选择器推到右下角按钮左侧，并在前面附带紫璃罗兰紫配色 [ ✓ 识图 ] 标签 */
     html.aa-on.aa-on .agy-composer-footer > div:first-child > div:has([data-testid="model-selector-trigger"]) {
       margin-left: auto !important;
       margin-right: 6px !important;
@@ -988,7 +988,7 @@ function buildCss(cfg, arts) {
       margin-left: 4px !important;
     }
 
-    /* 右下角圆形发送/语音按钮（星语薰衣草紫金边圆钮） */
+    /* 右下角圆形发送/语音按钮（紫璃薰衣草紫金边圆钮） */
     html.aa-on.aa-on .agy-composer-footer div:has(> span > [data-testid="voice-live-pill"]) {
       display: none !important;
     }
@@ -1025,7 +1025,7 @@ function buildCss(cfg, arts) {
     html.aa-on ::-webkit-scrollbar-thumb { background: rgba(182, 156, 245, .32) !important; border-radius: 99px; }
     html.aa-on ::-webkit-scrollbar-thumb:hover { background: rgba(233, 194, 122, .5) !important; }
 
-    /* ══════════════ 顶部双层栏（与侧栏、猫娘壁纸完全统一的星语紫罗兰磨砂 + 猫爪星芒暗纹，无分界黑线与右上角黑块） ══════════════ */
+    /* ══════════════ 顶部双层栏（与侧栏、猫娘壁纸完全统一的紫璃罗兰紫磨砂 + 猫爪星芒暗纹，无分界黑线与右上角黑块） ══════════════ */
     html.aa-on.aa-on [class*="@container/titlebar"] {
       position: relative !important;
       z-index: 30 !important;
@@ -1051,7 +1051,7 @@ function buildCss(cfg, arts) {
     html.aa-on.aa-on [class*="@container/titlebar"] * {
       border-color: transparent !important;
     }
-    /* 第一行左侧标题与“🔔 标准模式”配色适配星语薰衣草紫与柔金 */
+    /* 第一行左侧标题与“🔔 标准模式”配色适配紫璃薰衣草紫与柔金 */
     html.aa-on.aa-on [class*="@container/titlebar"] [data-testid="breadcrumb-segment"] {
       color: #f4ecff !important;
     }
@@ -1112,7 +1112,7 @@ function buildCss(cfg, arts) {
       transform: rotate(90deg);
     }
 
-    /* 第二行：与第一行无缝衔接的星语紫罗兰底色 + 左对齐 对话 | 上下文 | 编队 + 底沿柔金双线 */
+    /* 第二行：与第一行无缝衔接的紫璃罗兰紫底色 + 左对齐 对话 | 上下文 | 编队 + 底沿柔金双线 */
     #aa-topbar {
       position: relative !important;
       z-index: 29 !important;
