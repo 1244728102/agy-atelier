@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/1244728102/agy-atelier/main/assets/demo-full-window.png" width="100%" alt="Star Neko Atelier · 星语猫娘工坊" />
+  <img src="https://raw.githubusercontent.com/1244728102/agy-atelier/main/assets/demo-full-window.png" width="100%" alt="Zili Neko Atelier · 紫璃猫娘" />
 </p>
 
-<h1 align="center">Star Neko Atelier · 星语猫娘工坊 (<code>agy-atelier</code>)</h1>
+<h1 align="center">Zili Neko Atelier · 紫璃猫娘 (<code>agy-atelier</code>)</h1>
 
 <p align="center"><b>Turn Google Antigravity into a Starry Violet Rococo Maid Atelier — zero file patching, one-click live DevTools injection.</b></p>
 
@@ -24,18 +24,18 @@
 
 ---
 
-**Star Neko Atelier (`agy-atelier`)**专为紫发异瞳猫娘立绘壁纸《星语 · 雪原》独立原创深度定制，由 **1244728102 (爱哭的伊蕾娜)** 全案设计。它不仅将 Antigravity 的侧边栏、底部对话输入栏、消息气泡与顶部标题栏重塑为统一的**「星语紫罗兰 · 薰衣草粉紫 · 香槟柔金」**半透明磨砂玻璃体系，还在顶栏内联集成了**实时 Token 上下文环形图**与**多 Agent 编队拓扑控制台**。
+**Zili Neko Atelier (`agy-atelier`)**专为紫发异瞳猫娘立绘壁纸《紫璃猫娘》独立原创深度定制，由 **1244728102 (爱哭的伊蕾娜)** 全案设计。它不仅将 Antigravity 的侧边栏、底部对话输入栏、消息气泡与顶部标题栏重塑为统一的**「紫璃罗兰紫 · 薰衣草粉紫 · 香槟柔金」**半透明磨砂玻璃体系，还在顶栏内联集成了**实时 Token 上下文环形图**与**多 Agent 编队拓扑控制台**。
 
 ## ✨ 核心亮点 (Highlights)
 
 - **🥇 零侵入热注入架构 (Zero-Intrusion Isolated World Injection)**：不修改任何 Antigravity 安装目录文件，无需打包重签名。通过 CDP `Page.createIsolatedWorld` 实时挂载样式与装饰层，随时调用 `atelier_clear` 即可 100% 无损恢复原生界面。
 - **🎀 星夜紫罗兰侧栏 + 高精度 U 形刺绣蕾丝**：
   - 侧栏采用星夜紫罗兰磨砂底色 + 猫爪星芒织锦暗纹 + 四角星月金线框；
-  - 底部搭载**高精度金色卷草藤蔓 + 镂空刺绣蕾丝花瓣 + 星语紫罗兰立体绸缎蝴蝶结 + 珍珠金胸针**（`assets/ornaments/sidebar-swag.webp`），上方衬托 Q 版猫娘吉祥物；
+  - 底部搭载**高精度金色卷草藤蔓 + 镂空刺绣蕾丝花瓣 + 紫璃罗兰紫立体绸缎蝴蝶结 + 珍珠金胸针**（`assets/ornaments/sidebar-swag.webp`），上方衬托 Q 版猫娘吉祥物；
   - 「新建对话」重塑为**陶瓷白燕尾缎带金边按钮**，工作区标题重塑为**紫金燕尾绶带 + 星月盾徽**，会话树自带金色虚线连接轨。
 - **💎 1:1 黄金比例居中古典金框对话栏 (`964px × 145px` True-Centered Composer)**：
   - 顶部横跨镶金紫罗兰缎带横梁、三段式精确对齐薰衣草扇贝蕾丝轨道（`[data-skin-chrome="composer-lace"]`），正中央悬挂立体褶皱金边蝴蝶结与星芒宝石；
-  - 内胆采用**星语紫罗兰 + 樱粉极光**双层径向渐变磨砂玻璃；
+  - 内胆采用**紫璃罗兰紫 + 樱粉极光**双层径向渐变磨砂玻璃；
   - 左下角并排 `[ + ]` 与 `[ 🛡 ]` 两枚 `38×38px` 金边圆形磨砂徽章；右下角内联 `[ ✓ 识图 ]` 标签、无框模型选择器与 `38×38px` 圆形操作按钮；底部金框正下方外部居中悬浮实时 `tok/s · 缓存命中率` 状态条。
 - **🧭 双层星夜紫罗兰控制台顶栏 (Two-Row Telemetry Console Header)**：
   - **第一行**：左侧显示工作区面包屑与 `🔔 标准模式` 胶囊；右侧在不遮挡任何原生控件的前提下集成 `[ ▭ 面板切换 ]`、`[ ⤓ 一键导出对话 Markdown ]`、`[ ⋯ ]`、`[ ◨ ]` 4 枚图标按钮；
@@ -48,7 +48,7 @@
 
 ### 全窗口实机效果（星夜紫罗兰侧栏 + 双层控制台顶栏 + 居中金框蕾丝对话栏）
 
-![Star Neko Atelier Full Window Preview](https://raw.githubusercontent.com/1244728102/agy-atelier/main/assets/demo-full-window.png)
+![Zili Neko Atelier Full Window Preview](https://raw.githubusercontent.com/1244728102/agy-atelier/main/assets/demo-full-window.png)
 
 ---
 
@@ -70,7 +70,7 @@ git clone https://github.com/1244728102/agy-atelier.git "$HOME/.gemini/config/pl
 
 将下面这句话直接发给 Antigravity / Claude Code / Codex：
 
-> 请按照 https://github.com/1244728102/agy-atelier/blob/main/INSTALL.md 安装并启用 `agy-atelier` 星语猫娘工坊皮肤插件，然后调用 `atelier_apply` 注入当前窗口。
+> 请按照 https://github.com/1244728102/agy-atelier/blob/main/INSTALL.md 安装并启用 `agy-atelier` 紫璃猫娘工坊皮肤插件，然后调用 `atelier_apply` 注入当前窗口。
 
 ---
 
@@ -102,8 +102,8 @@ agy-atelier/
 ├── LICENSE                            # MIT 开源许可证
 ├── assets/
 │   ├── demo-full-window.png           # 实机全窗口高清预览图
-│   ├── wallpaper.jpg                  # 《星语 · 雪原》紫发异瞳猫娘壁纸
-│   ├── logo.png                       # 星语猫娘工坊 Q 版徽标
+│   ├── wallpaper.jpg                  # 《紫璃猫娘》紫发异瞳猫娘壁纸
+│   ├── logo.png                       # 紫璃猫娘工坊 Q 版徽标
 │   └── ornaments/                     # 高精度蕾丝、蝴蝶结、三切片/九切片金框贴图资源
 ├── server/
 │   ├── mcp_server.py                  # Python MCP App 服务端 + 127.0.0.1:5399 遥测桥 + 启动自动注入
