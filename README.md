@@ -12,8 +12,7 @@
   <a href="./README.zh-CN.md">简体中文</a> ·
   <a href="./INSTALL.md">Install Guide</a> ·
   <a href="./AGENTS.md">Architecture</a> ·
-  <a href="./CHANGELOG.md">Changelog</a> ·
-  <a href="./NOTICE.md">Attribution & Notice</a>
+  <a href="./CHANGELOG.md">Changelog</a>
 </p>
 
 <p align="center">
@@ -25,7 +24,7 @@
 
 ---
 
-**Star Neko Atelier (`agy-atelier`)**参考 [Small-tailqwq/dsh-deep-whale (`maid-atelier`)](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier#readme) 的古典女仆工坊美学，专为紫发异瞳猫娘立绘壁纸《星语 · 雪原》深度定制。它不仅将 Antigravity 的侧边栏、底部对话输入栏、消息气泡与顶部标题栏重塑为统一的**「星语紫罗兰 · 薰衣草粉紫 · 香槟柔金」**半透明磨砂玻璃体系，还在顶栏内联集成了**实时 Token 上下文环形图**与**多 Agent 编队拓扑控制台**。
+**Star Neko Atelier (`agy-atelier`)**专为紫发异瞳猫娘立绘壁纸《星语 · 雪原》独立原创深度定制，由 **1244728102 (爱哭的伊蕾娜)** 全案设计。它不仅将 Antigravity 的侧边栏、底部对话输入栏、消息气泡与顶部标题栏重塑为统一的**「星语紫罗兰 · 薰衣草粉紫 · 香槟柔金」**半透明磨砂玻璃体系，还在顶栏内联集成了**实时 Token 上下文环形图**与**多 Agent 编队拓扑控制台**。
 
 ## ✨ 核心亮点 (Highlights)
 
@@ -119,7 +118,6 @@ agy-atelier/
 
 ---
 
-## 📜 致敬与开源许可 (Attribution & License)
+## 📜 开源许可 (License)
 
-- 代码采用 **[MIT License](./LICENSE)** 开源。
-- 界面布局灵感与部分装饰结构致敬 [Small-tailqwq/dsh-deep-whale (`maid-atelier`)](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier#readme)，详见 [NOTICE.md](./NOTICE.md)。
+- 本插件由 **1244728102 (爱哭的伊蕾娜)** 原创设计与开发，采用 **[MIT License](./LICENSE)** 开源。
