@@ -1,4 +1,4 @@
-// Isolated-world DevTools injector for AGY Atelier (maid-atelier inspired skin).
+// Isolated-world DevTools injector for AGY Atelier (Star Neko Atelier).
 import { readFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { dirname, extname, join } from 'node:path';
@@ -63,7 +63,7 @@ async function fileToDataUri(p) {
 
 
 // ───────────────────────── Star Neko Atelier · 星语猫娘工坊 ─────────────────────────
-// Complete architecture & visual contract aligned with maid-atelier/src & maid-atelier/tests:
+// Complete architecture & visual contract aligned with atelier/src & atelier/tests:
 // - [data-skin-chrome="character-stage"] inside the conversation column with
 //   [data-skin-chrome="character-span"], [data-maid-character="left"], [data-maid-character="right"]
 //   and ResizeObserver hysteresis (data-maid-figures-crowded).
@@ -848,7 +848,7 @@ function buildCss(cfg, arts) {
       display: none !important;
     }
 
-    /* 2. maid-atelier 三段式精确对齐蕾丝轨道 ([data-skin-chrome="composer-lace"] > [data-maid-composer-lace-center]) */
+    /* 2. atelier 三段式精确对齐蕾丝轨道 ([data-skin-chrome="composer-lace"] > [data-maid-composer-lace-center]) */
     html.aa-on.aa-on [data-skin-chrome="composer-lace"] {
       position: absolute !important;
       inset: 0 3px auto 3px !important;
@@ -1330,16 +1330,24 @@ async function run() {
             decorateWorkspaceTree();
 
             /* 3. 输入器三段式对齐蕾丝轨道 ([data-skin-chrome="composer-lace"] > [data-maid-composer-lace-center], apply.spec.ts:1147) */
-            const composer = document.querySelector('.surface-composer');
-            if (composer && !composer.querySelector('[data-skin-chrome="composer-lace"]')) {
-              const rail = document.createElement('div');
-              rail.dataset.skinChrome = 'composer-lace';
-              rail.setAttribute('aria-hidden', 'true');
-              const center = document.createElement('span');
-              center.dataset.maidComposerLaceCenter = '';
-              rail.appendChild(center);
-              composer.prepend(rail);
-            }
+            const ensureComposerLace = () => {
+              const composer = document.querySelector('.surface-composer');
+              if (composer && !composer.querySelector('[data-skin-chrome="composer-lace"]')) {
+                const rail = document.createElement('div');
+                rail.dataset.skinChrome = 'composer-lace';
+                rail.setAttribute('aria-hidden', 'true');
+                const center = document.createElement('span');
+                center.dataset.maidComposerLaceCenter = '';
+                rail.appendChild(center);
+                composer.prepend(rail);
+              }
+              if (showLace) {
+                if (!document.documentElement.classList.contains('aa-lace-on')) document.documentElement.classList.add('aa-lace-on');
+              }
+            };
+            ensureComposerLace();
+            if (window.__aaObserverInterval) clearInterval(window.__aaObserverInterval);
+            window.__aaObserverInterval = setInterval(ensureComposerLace, 1000);
 
             /* 4. 宽表格展开卡片 (table-card.spec.ts) */
             const decorateTables = () => {
