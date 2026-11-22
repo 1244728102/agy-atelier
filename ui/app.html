@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Star Neko Atelier · 星语猫娘工坊</title>
+<title>Zili Neko Atelier · 紫璃猫娘</title>
 <style>
   :root {
     --bg-1: #140e2c;
@@ -76,7 +76,7 @@
 </head>
 <body>
 <div class="topbar">
-  <b>✦ Star Neko Atelier · 星语猫娘工坊</b>
+  <b>✦ Zili Neko Atelier · 紫璃猫娘</b>
   <span class="badge" id="st-badge">未检测</span>
 </div>
 <div class="main" id="main"></div>
@@ -84,7 +84,7 @@
 <script type="module">
 /*__EXT_APPS_SDK__*/
 
-const app = new App({ name: 'Star Neko Atelier · 星语猫娘工坊', version: '0.2.0' }, {});
+const app = new App({ name: 'Zili Neko Atelier · 紫璃猫娘', version: '0.2.0' }, {});
 const state = { cfg: null, active: false, msg: '' };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -126,7 +126,7 @@ function render() {
       <div class="row"><span class="lbl">磨砂玻璃模糊（${c.blur ?? 16}px）</span>
         <input id="a-blur" type="range" min="0" max="30" value="${c.blur ?? 16}" style="width:180px" />
       </div>
-      <div class="row"><span class="lbl">星语强调色（薰衣草紫 / 樱粉 / 异瞳金）</span>
+      <div class="row"><span class="lbl">紫璃强调色（薰衣草紫 / 樱粉 / 异瞳金）</span>
         <input id="a-acc" type="color" value="${esc(c.accent || '#b69cf5')}" />
       </div>
       <div class="row"><span class="lbl">显示侧栏 U 形蕾丝花边与蝴蝶结</span>
@@ -137,11 +137,11 @@ function render() {
       </div>
       <div class="row" style="justify-content:flex-end">
         <button class="btn" id="a-clear">还原原生界面</button>
-        <button class="btn primary" id="a-apply">✦ 应用星语猫娘工坊</button>
+        <button class="btn primary" id="a-apply">✦ 应用紫璃猫娘工坊</button>
       </div>
       ${state.msg ? `<div class="badge">${esc(state.msg)}</div>` : ''}
       <div class="notice">
-        作者：<b>1244728102 (爱哭的伊蕾娜)</b> · 专为 Google Antigravity (AGY) 独立原创设计打造的《星语 · 雪原》专属整窗洛可可猫娘壁纸毛玻璃与控件皮肤系统。
+        作者：<b>1244728102 (爱哭的伊蕾娜)</b> · 专为 Google Antigravity (AGY) 独立原创设计打造的《紫璃猫娘》专属整窗洛可可猫娘壁纸毛玻璃与控件皮肤系统。
       </div>
     </div>
   `;
@@ -157,7 +157,7 @@ function render() {
     });
     state.cfg = sc.cfg || state.cfg;
     state.active = !!sc.active;
-    state.msg = sc.msg || '已应用星语猫娘工坊皮肤';
+    state.msg = sc.msg || '已应用紫璃猫娘工坊皮肤';
     render();
   };
 
