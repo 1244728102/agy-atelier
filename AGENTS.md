@@ -1,4 +1,4 @@
-# Star Neko Atelier (`agy-atelier`) — Agent Architecture & Customization Guide
+# Zili Neko Atelier (agy-atelier) — Agent Architecture & Customization Guide
 
 `agy-atelier` is a zero-intrusion full-window Rococo atelier theme and telemetry header console for Google Antigravity (AGY).
 
